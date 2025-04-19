@@ -615,3 +615,108 @@
   .reservation h3 {
     margin-bottom: 1rem;
   }
+  .reservation p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .features {
+      flex-direction: column;
+    }
+  
+    .feature {
+      margin-bottom: 2rem;
+    }
+  
+    .testimonial-container {
+      flex-direction: column;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .footer-logo,
+    .footer-hours,
+    .footer-contact {
+      margin-bottom: 2rem;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .menu-table th,
+    .menu-table td {
+      padding: 0.5rem;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-info,
+    .contact-form {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      height: 60vh;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .menu-table {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* CSS-only mobile menu toggle (no JavaScript) */
+  @media (max-width: 768px) {
+    .hamburger:hover + nav ul,
+    nav ul:hover {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--background-color);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+    }
+  
+    nav ul:hover li,
+    .hamburger:hover + nav ul li {
+      margin: 0;
+      text-align: center;
+    }
+  
+    nav ul:hover li a,
+    .hamburger:hover + nav ul li a {
+      display: block;
+      padding: 1rem;
+    }
+  }
+  
