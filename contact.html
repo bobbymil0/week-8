@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vita - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/bella-italia-logo.png" alt="Bella Vita Logo">
+            <h1>Bella Vita</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-header">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Location</h3>
+                    <p>123 Pasta Lane</p>
+                    <p>San Francisco, CA 94110</p>
+                </div>
+                <div class="info-item">
+                    <h3>Hours</h3>
+                    <p>Tuesday - Thursday: 5:00pm - 10:00pm</p>
+                    <p>Friday - Saturday: 12:00pm - 11:00pm</p>
+                    <p>Sunday: 12:00pm - 9:00pm</p>
+                    <p>Monday: Closed</p>
+                </div>
+                <div class="info-item">
+                    <h3>Contact</h3>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@trattoriabellaitalia.com</p>
+                </div>
+                <div class="map">
+                    <img src="images/map.png" alt="Map to Bella Vita">
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="reservation">Reservation</option>
+                            <option value="catering">Private Event</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="reservation">
+            <h3>Make a Reservation</h3>
+            <p>For parties of 6 or more, we recommend making a reservation in advance.</p>
+            <a href="tel:5551234567" class="btn">Call (555) 123-4567</a>
+            <p>Or fill out our contact form with the subject "Reservation"</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/bella-italia-logo.png" alt="Bella Vita Logo">
+                <h2>Bella Vita</h2>
+            </div>
+            <div class="footer-hours">
+                <h3>Hours</h3>
+                <p>Tuesday - Thursday: 5:00pm - 10:00pm</p>
+                <p>Friday - Saturday: 12:00pm - 11:00pm</p>
+                <p>Sunday: 12:00pm - 9:00pm</p>
+                <p>Monday: Closed</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>123 Pasta Lane</p>
+                <p>San Francisco, CA 94110</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@trattoriabellaitalia.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Bella Vita. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
